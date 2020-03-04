@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="Our Team"
+            android:textSize="24sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--Image View-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1">
+
+            <ImageView
+                android:id="@+id/photoOne"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo2" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintRight_toLeftOf="@id/cv3"
+            app:layout_constraintLeft_toRightOf="@id/cv1"
+            app:layout_constraintTop_toBottomOf="@id/tv1">
+            <ImageView
+                android:id="@+id/photoTwo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/photo1"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv1">
+            <ImageView
+                android:id="@+id/photoThree"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/photo3"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text1">
+
+            <ImageView
+                android:id="@+id/photoFour"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photo4" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2">
+
+            <ImageView
+                android:id="@+id/photoFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/five" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="25dp"
+            android:layout_marginBottom="20dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.093"
+            app:layout_constraintTop_toBottomOf="@id/textThree">
+            <ImageView
+                android:id="@+id/photoSix"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="center"
+                android:src="@drawable/photo6"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <!--Text View-->
+
+        <TextView
+            android:id="@+id/textOne"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Adams G"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv1" />
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="130dp"
+            android:layout_height="match_parent"
+            android:text="Executive Officer"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/textOne"/>
+
+        <TextView
+            android:id="@+id/textTwo"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Betty L"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintTop_toBottomOf="@id/cv2"/>
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Marketing"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintTop_toBottomOf="@id/textTwo"/>
+
+        <TextView
+            android:id="@+id/textThree"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Roberts"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintHorizontal_bias="1.1"
+            app:layout_constraintTop_toBottomOf="@id/cv3" />
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Marketing"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1.03"
+            app:layout_constraintTop_toBottomOf="@id/textTwo"/>
+
+        <TextView
+            android:id="@+id/textFour"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:text="Miller W"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv4" />
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="UX Designer"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/textFour"/>
+
+        <TextView
+            android:id="@+id/textFive"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Kenvin John"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintTop_toBottomOf="@id/cv5"/>
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:text="Web Developer"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintTop_toBottomOf="@id/textFive"/>
+
+        <TextView
+            android:id="@+id/textSix"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Laura M"
+            android:gravity="center"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv5" />
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:text="Mobile Developer"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintHorizontal_bias="1.03"
+            app:layout_constraintTop_toBottomOf="@id/textSix"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:text="Mission"
+            android:textSize="24sp"
+            app:layout_constraintTop_toBottomOf="@id/text6" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2"
+            android:layout_marginTop="30dp"
+            android:text="Duis tellus metus,elementum a lectus id,aliquest interdum mauris.Nam
+bibendum efficitur sollicitudin.Proin eleifend libero velit,nec fringlla dolor finibus quis.nMorbi
+eu libero pellentesqueDuis tellus metus,elementum a lectus id,aliquest interdum mauris.Nam
+bibendum efficitur sollicitudin.Proin eleifend libero velit,nec fringlla dolor finibus quis.nMorbi
+eu libero pellentesque.Duis tellus metus,elementum a lectus id,aliquest interdum mauris.Nam
+bibendum efficitur sollicitudin.Proin eleifend libero velit,nec fringlla dolor finibus quis.nMorbi
+eu libero pellentesque.Duis tellus metus,elementum a lectus id,aliquest interdum mauris.Nam
+bibendum efficitur sollicitudin.Proin eleifend libero velit,nec fringlla dolor finibus quis.nMorbi
+eu libero pellentesque.Duis tellus metus,elementum a lectus id,aliquest interdum mauris.Nam
+bibendum efficitur sollicitudin.Proin eleifend libero velit,nec fringlla dolor finibus quis.nMorbi
+eu libero pellentesque."/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
